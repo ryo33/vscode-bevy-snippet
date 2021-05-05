@@ -1,0 +1,35 @@
+{
+	"Bevy: Use prelude": {
+		"prefix": "bevy use prelude",
+		"body": [
+			"use bevy::prelude::*;",
+		],
+		"description": "Use bevy prelude"
+	},
+	"Bevy: New Plugin": {
+		"prefix": "bevy plugin",
+		"body": [
+			"struct ${1:AwesomePlugin};",
+			"",
+			"impl Plugin for ${1:AwesomePlugin} {",
+			"\tfn build(&self, app: &mut bevy::app::AppBuilder) {",
+			"\t\ttodo!()",
+			"\t}",
+			"}"
+		],
+		"description": "Create a new Plugin"
+	},
+	"Bevy: New PluginGroup": {
+		"prefix": "bevy plugin group",
+		"body": [
+			"struct ${1:AwesomePlugins};",
+			"",
+			"impl PluginGroup for ${1:AwesomePlugins} {",
+			"\tfn build(&mut self, group: &mut bevy::app::PluginGroupBuilder) {",
+			"\t\ttodo!()",
+			"\t}",
+			"}"
+		],
+		"description": "Create a new PluginGroup"
+	}
+}
